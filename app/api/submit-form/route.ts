@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@supabase/supabase-js'
 
 // Rate limiting: Store IP-based request counts (in production, use Redis)
 const rateLimitStore = new Map<string, { count: number; resetTime: number }>()
